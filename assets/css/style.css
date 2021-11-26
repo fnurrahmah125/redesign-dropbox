@@ -59,37 +59,36 @@ a {
   transform: translateX(0);
 }
 
-.nav .nav-list {
+.nav ul {
   padding-bottom: 0.75rem;
 }
 
-.nav .nav-list .nav-item {
+.nav ul li {
   padding-bottom: 1.25rem;
 }
 
-.nav .nav-list .nav-item a {
+.nav ul li a {
   color: var(--text-color);
   font-size: 1rem;
   font-weight: 500;
-  transition: 0.5s;
 }
 
-.nav .nav-list .nav-item a:hover {
-  font-weight: 600;
+.nav ul li a:hover {
+  text-decoration: underline;
 }
 
-.nav .nav-menu span.nav-item {
+.nav .nav-menu span {
   border-radius: 18px;
   padding: 0.625rem 1.25rem;
   background-color: var(--button-color);
   transition: 0.5s;
 }
 
-.nav .nav-menu span.nav-item:hover {
+.nav .nav-menu span:hover {
   background-color: #044ec3;
 }
 
-.nav .nav-menu span.nav-item a {
+.nav .nav-menu span a {
   color: var(--white-color);
   font-size: 1rem;
 }
@@ -168,13 +167,13 @@ a {
   color: rgba(37, 84, 111, 0.5);
 }
 
-.header .cta-button {
+.header .text-header .cta-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.header .cta-button a {
+.header .text-header .cta-button a {
   font-size: 1rem;
   font-weight: 500;
   background-color: var(--button-color);
@@ -186,17 +185,17 @@ a {
   transition: 0.5s;
 }
 
-.header .cta-button a:hover {
+.header .text-header .cta-button a:hover {
   background-color: #044ec3;
 }
 
-.header .cta-button a:last-child {
+.header .text-header .cta-button a:last-child {
   background-color: var(--white-color);
   color: var(--button-color);
   border: 1px solid var(--button-color);
 }
 
-.header .cta-button a:last-child:hover {
+.header .text-header .cta-button a:last-child:hover {
   color: var(--white-color);
   background-color: var(--button-color);
   border: 1px solid var(--button-color);
@@ -241,9 +240,15 @@ a {
     display: inline-block;
   }
 
-  .nav .nav-list .nav-item {
+  .nav ul li {
     padding-bottom: 0;
-    margin-right: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .nav .nav-menu span {
+    margin-top: -13px;
   }
 
   /* -------- HEADER -------- */
@@ -276,7 +281,7 @@ a {
     color: rgba(37, 84, 111, 0.5);
   }
 
-  .header .cta-button {
+  .header .text-header .cta-button {
     display: inline-block;
   }
 
