@@ -28,7 +28,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   color: var(--text-color);
   padding: 1rem 1rem 0 1rem;
 }
@@ -38,30 +37,28 @@ a {
 }
 
 .nav .nav-menu {
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
-  padding-top: 7rem;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: var(--white-color);
+  z-index: -1;
   transform: translateX(100%);
-  transition: 1s;
-  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav .nav-menu ul li {
+  padding-bottom: 1.25rem;
 }
 
 .nav .nav-menu.slide {
   opacity: 1;
   transform: translateX(0);
-}
-
-.nav ul {
-  padding-bottom: 0.75rem;
-}
-
-.nav ul li {
-  padding-bottom: 1.25rem;
 }
 
 .nav ul li a {
@@ -106,7 +103,7 @@ a {
   top: -6px;
   opacity: 0;
   cursor: pointer;
-  z-index: 5;
+  z-index: 9;
 }
 
 .nav .menu-toggle span {
@@ -135,7 +132,7 @@ a {
 }
 
 .nav .menu-toggle input:checked ~ span:nth-child(3) {
-  transform: translate(1000px, 0);
+  transform: translateX(1000%);
 }
 
 /* -------- HEADER -------- */
@@ -221,6 +218,7 @@ a {
     position: inherit;
     transform: translateX(0);
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding-top: 0;
     transition: none;
@@ -255,13 +253,12 @@ a {
 
   .header .text-header h1 {
     margin-bottom: 1.5rem;
-    font-size: 3rem;
   }
 
   .header .text-header p {
     max-width: 560px;
     margin-bottom: 3.5rem;
-    font-size: 1.25rem;
+
     color: rgba(37, 84, 111, 0.5);
   }
 
@@ -279,5 +276,12 @@ a {
     display: block;
     position: absolute;
     right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* -------- HEADER -------- */
+  .header .text-header h1 {
+    font-size: 2.7rem;
   }
 }
