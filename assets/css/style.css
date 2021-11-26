@@ -25,15 +25,12 @@ a {
 
 /* -------- NAVIGATION -------- */
 .nav {
-  padding: 1rem 1rem 0 1rem;
-}
-
-.nav .row {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   color: var(--text-color);
+  padding: 1rem 1rem 0 1rem;
 }
 
 .nav .logo img {
@@ -46,7 +43,7 @@ a {
   top: 0;
   width: 100%;
   height: 100vh;
-  padding-top: 10rem;
+  padding-top: 7rem;
   text-align: center;
   background-color: var(--white-color);
   transform: translateX(100%);
@@ -219,54 +216,41 @@ a {
   }
 
   .nav .nav-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 70%;
-    height: auto;
-    padding-top: 0;
-    text-align: center;
-    background-color: var(--white-color);
-    transform: none;
-    transition: 1s;
-    opacity: 1;
+    width: auto;
+    height: 50px;
+    position: inherit;
+    transform: translateX(0);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    padding-top: 0;
+    transition: none;
+    opacity: 1;
   }
 
   .nav .nav-menu ul li {
     padding-bottom: 0;
     display: inline-block;
-  }
-
-  .nav ul li {
-    padding-bottom: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-right: 1.5rem;
   }
 
-  .nav .nav-menu span {
-    margin-top: -13px;
-  }
-
   /* -------- HEADER -------- */
   .header {
-    height: auto;
-    text-align: left;
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .header .row {
-    display: flex;
-    justify-content: space-between;
+    color: var(--text-color);
   }
 
   .header .text-header {
-    margin: 0;
     max-width: 660px;
+    margin: auto;
+    padding-top: 0;
+    text-align: left;
   }
 
   .header .text-header h1 {
@@ -277,7 +261,7 @@ a {
   .header .text-header p {
     max-width: 560px;
     margin-bottom: 3.5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: rgba(37, 84, 111, 0.5);
   }
 
@@ -285,9 +269,15 @@ a {
     display: inline-block;
   }
 
+  .header .header-img {
+    position: relative;
+  }
+
   .header .header-img img {
-    display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 560px;
+    display: block;
+    position: absolute;
+    right: 0;
   }
 }
