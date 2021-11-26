@@ -47,8 +47,9 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: -1;
+  /* z-index: -1; */
   transform: translateX(100%);
+  background-color: var(--white-color);
   transition: 0.5s;
 }
 
@@ -181,6 +182,10 @@ a {
 
 .header .text-header .cta-button a:hover {
   background-color: #044ec3;
+}
+
+.header .text-header .cta-button a:first-child {
+  box-shadow: 6px 6px 48px rgba(0, 126, 229, 0.25);
 }
 
 .header .text-header .cta-button a:last-child {
