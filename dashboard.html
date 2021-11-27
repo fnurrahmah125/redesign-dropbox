@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Dashboard</title>
+
+    <link rel="icon" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <!---------- LEFT COLUMN ---------->
+    <div class="col-left">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="dropbox logo" />
+      </div>
+
+      <div class="main-menu">
+        <div class="menu-item active">
+          <div class="menu-icon">
+            <img src="assets/img/home-icon.png" alt="home icon" />
+          </div>
+          <div class="menu-link"><a href="#">Home</a></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">
+            <img src="assets/img/file-icon.png" alt="home icon" />
+          </div>
+          <div class="menu-link"><a href="#">All files</a></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">
+            <img src="assets/img/star-icon.png" alt="home icon" />
+          </div>
+          <div class="menu-link"><a href="#">Starred</a></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">
+            <img src="assets/img/shared-icon.png" alt="home icon" />
+          </div>
+          <div class="menu-link"><a href="#">Shared</a></div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-icon">
+            <img src="assets/img/trash-icon.png" alt="home icon" />
+          </div>
+          <div class="menu-link"><a href="#">Deleted</a></div>
+        </div>
+      </div>
+
+      <div class="storage">
+        <p><span>255 GB</span> used</p>
+        <p>25% used - 769 GB free</p>
+        <div class="storage-info">
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="upgrade">
+        <a href="#">Upgrade Account</a>
+      </div>
+    </div>
+    <!---------- END LEFT COLUMN ---------->
+
+    <!---------- MIDDLE COLUMN---------->
+    <div class="col-middle">
+      <!-- Search box -->
+      <div class="search-box">
+        <div>
+          <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>Search</span>
+        </div>
+        <div class="user-photo">
+          <img src="assets/img/user.png" alt="user photo" width="35" />
+        </div>
+      </div>
+    </div>
+    <!---------- END MIDDLE COLUMN---------->
+
+    <!---------- RIGHT COLUMN ---------->
+    <!---------- END RIGHT COLUMN ---------->
+
+    <!---------- MOBILE VERSION ---------->
+    <div class="bg-transparent"></div>
+
+    <!-- Add new icon -->
+    <div class="add-icon">
+      <img src="assets/img/add-icon.png" alt="add icon" />
+    </div>
+
+    <div class="bg-transparent-2"></div>
+
+    <!-- Add Modal -->
+    <div class="add-container">
+      <div class="add-modal">
+        <div class="add-item">
+          <a href="#">Add new</a>
+          <img src="assets/img/add-icon.png" alt="" />
+        </div>
+
+        <div class="add-item">
+          <img src="assets/img/upload-file-icon.png" alt="" />
+          <a href="#">Upload files </a>
+        </div>
+
+        <div class="add-item">
+          <img src="assets/img/upload-folder-icon.png" alt="" />
+          <a href="#">Upload folder</a>
+        </div>
+
+        <div class="add-item">
+          <img src="assets/img/new-folder-icon.png" alt="" />
+          <a href="#">New folder</a>
+        </div>
+
+        <div class="add-item">
+          <img src="assets/img/shared-folder-icon.png" alt="" />
+          <a href="#">Upload shared folder</a>
+        </div>
+      </div>
+    </div>
+    <!---------- END  MOBILE VERSION ---------->
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
