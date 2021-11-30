@@ -68,10 +68,16 @@
     <!---------- SCRIPT ---------->
     <script>
       const menuToggle = document.querySelector(".nav .menu-toggle");
-      const nav = document.querySelector(".nav-menu");
+      const navMenu = document.querySelector(".nav-menu");
+      const span2 = document.querySelector(".nav .menu-toggle span:nth-child(2)");
+      const span3 = document.querySelector(".nav .menu-toggle span:nth-child(3)");
+      const span4 = document.querySelector(".nav .menu-toggle span:nth-child(4)");
 
       menuToggle.addEventListener("click", function () {
-        nav.classList.toggle("slide");
+        navMenu.classList.toggle("slide");
+        span2.classList.toggle("span-child2");
+        span3.classList.toggle("span-child3");
+        span4.classList.toggle("span-child4");
       });
     </script>
   </body>

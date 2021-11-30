@@ -124,7 +124,19 @@ a {
   transform-origin: 0 100%;
 }
 
-.nav .menu-toggle input:checked ~ span:nth-child(2) {
+.span-child2 {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.span-child4 {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.span-child3 {
+  transform: translateX(500%);
+}
+
+/* .nav .menu-toggle input:checked ~ span:nth-child(2) {
   transform: rotate(45deg) translate(-1px, -1px);
 }
 
@@ -133,8 +145,8 @@ a {
 }
 
 .nav .menu-toggle input:checked ~ span:nth-child(3) {
-  transform: translateX(1000%);
-}
+  transform: translateX(500%);
+} */
 
 /* Header */
 .header {
