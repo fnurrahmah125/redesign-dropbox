@@ -16,7 +16,8 @@
     <link rel="icon" href="assets/img/favicon.png" />
   </head>
   <body>
-    <!---------- LEFT COLUMN ---------->
+    <div class="container">
+      <!---------- LEFT COLUMN ---------->
     <div class="col-left">
       <div class="logo">
         <img src="assets/img/logo.png" alt="dropbox logo" />
@@ -75,19 +76,27 @@
 
     <!---------- MIDDLE COLUMN---------->
     <div class="col-middle">
-      <!-- Search box -->
       <div class="search-box">
         <div>
+          <img src="assets/img/search-icon.png" alt="" class="search-icon" />
           <div class="menu-toggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <span>Search</span>
+          <input type="text" placeholder="Search"></input>
         </div>
+
+
         <div class="user-photo">
           <img src="assets/img/user.png" alt="user photo" width="35" />
+        </div>
+
+        <div class="search-notif">
+          <img src="assets/img/question-mark-icon.png" alt="" />
+          <img src="assets/img/grid-icon.png" alt="" />
+          <img src="assets/img/bell-icon.png" alt="" />
         </div>
       </div>
 
@@ -129,7 +138,7 @@
       <div class="recent">
         <div class="mid-col-title">
           <p>Recent</p>
-          <a href="#"><img src="assets/img/arrow-icon.png" alt="" /></a>
+          <a href="#"><img src="assets/img/chevron-icon.png" alt="" /></a>
         </div>
 
         <div class="recent-container">
@@ -141,9 +150,16 @@
                 <span>Edited 3 minutes ago</span>
               </div>
             </div>
-            <a href="#">
-              <img class="item-more" src="assets/img/eva_more-horizontal-fill.png" alt="" />
-            </a>
+            <div class="item-btn">
+              <a href="#" class="recent-btn">Share</a>
+              <a href="#" class="recent-btn">
+                Open
+                <img src="assets/img/eva_chevron-down-fill.png" alt=""
+              /></a>
+              <a href="#">
+                <img class="item-more" src="assets/img/eva_more-horizontal-fill.png" alt="" />
+              </a>
+            </div>
           </div>
 
           <div class="recent-item">
@@ -203,17 +219,64 @@
     <!---------- END MIDDLE COLUMN---------->
 
     <!---------- RIGHT COLUMN ---------->
+    <div class="col-right">
+      <div class="user-account">
+        <div class="user-info">
+          <img src="assets/img/user.png" alt="" />
+          <p>Robert Fox</p>
+        </div>
+        <img src="assets/img/eva_chevron-down-fill.png" alt="" />
+      </div>
+
+      <div class="add-section">
+        <div class="add-button">
+          <a href="#">Add new</a>
+          <img src="assets/img/add-icon.png" alt="" />
+        </div>
+
+        <div class="add-modal">
+          <div class="add-item">
+            <img src="assets/img/upload-file-icon.png" alt="" />
+            <a href="#">Upload files </a>
+          </div>
+
+          <div class="add-item">
+            <img src="assets/img/upload-folder-icon.png" alt="" />
+            <a href="#">Upload folder</a>
+          </div>
+
+          <div class="add-item">
+            <img src="assets/img/new-folder-icon.png" alt="" />
+            <a href="#">New folder</a>
+          </div>
+
+          <div class="add-item">
+            <img src="assets/img/shared-folder-icon.png" alt="" />
+            <a href="#">Upload shared folder</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="upgrade-account">
+        <a href="#">
+          <img src="assets/img/upgrade-icon.png" alt="" />
+        </a>
+        <p>Upgrade Account</p>
+        <p>Upgrade your account now and get a 15% discount</p>
+      </div>
+    </div>
     <!---------- END RIGHT COLUMN ---------->
+    </div>
 
     <!---------- MOBILE VERSION ---------->
-    <div class="bg-transparent"></div>
+    <div class="bg-left"></div>
 
     <!-- Add new icon -->
     <div class="add-icon">
       <img src="assets/img/add-icon.png" alt="add icon" />
     </div>
 
-    <div class="bg-transparent-2"></div>
+    <div class="bg-down"></div>
 
     <!-- Add Modal -->
     <div class="add-container">
