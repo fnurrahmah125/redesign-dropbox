@@ -1,3 +1,4 @@
+/* -------- GENERAL STYLES -------- */
 :root {
   --text-color: #25546f;
   --button-color: #0062ff;
@@ -23,16 +24,18 @@ a {
   text-decoration: none;
 }
 
+/* Logo */
 .logo img {
   width: 125px;
 }
 
+/* Menu toggle */
 .menu-toggle {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
-  position: relative;
 }
 
 .menu-toggle input {
@@ -49,7 +52,7 @@ a {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: var(--text-color);
+  background: var(--text-color);
   border-radius: 3px;
   transition: 0.5s;
 }
@@ -77,17 +80,17 @@ a {
   align-items: center;
   text-align: center;
   transform: translateX(100%);
-  background-color: var(--white-color);
+  background: var(--white-color);
   transition: 0.5s;
-}
-
-.nav-menu ul li {
-  padding-bottom: 1.25rem;
 }
 
 .nav-menu.slide {
   opacity: 1;
   transform: translateX(0);
+}
+
+.nav-menu ul li {
+  padding-bottom: 1.25rem;
 }
 
 .nav-menu ul li a {
@@ -103,19 +106,20 @@ a {
 .nav-menu span {
   border-radius: 18px;
   padding: 0.625rem 1.25rem;
-  background-color: var(--button-color);
+  background: var(--button-color);
   transition: 0.5s;
 }
 
 .nav-menu span:hover {
-  background-color: #044ec3;
+  background: #044ec3;
 }
 
-.nav .nav-menu span a {
+.nav-menu span a {
   color: var(--white-color);
   font-size: 1rem;
 }
 
+/* Menu toggle */
 .nav .menu-toggle span:nth-child(2) {
   transform-origin: 0 0;
 }
@@ -135,18 +139,6 @@ a {
 .span-child3 {
   transform: translateX(500%);
 }
-
-/* .nav .menu-toggle input:checked ~ span:nth-child(2) {
-  transform: rotate(45deg) translate(-1px, -1px);
-}
-
-.nav .menu-toggle input:checked ~ span:nth-child(4) {
-  transform: rotate(-45deg) translate(-1px, 0);
-}
-
-.nav .menu-toggle input:checked ~ span:nth-child(3) {
-  transform: translateX(500%);
-} */
 
 /* Header */
 .header {
@@ -188,15 +180,15 @@ a {
 .cta-button a {
   font-size: 1rem;
   font-weight: 500;
-  background-color: var(--button-color);
   color: var(--white-color);
   border-radius: 16px;
   padding: 0.625rem 1.25rem;
+  background: var(--button-color);
   transition: 0.5s;
 }
 
 .cta-button a:hover {
-  background-color: #044ec3;
+  background: #044ec3;
 }
 
 .cta-button a:first-child {
@@ -204,14 +196,14 @@ a {
 }
 
 .cta-button a:last-child {
-  background-color: var(--white-color);
+  background: var(--white-color);
   color: var(--button-color);
   border: 1px solid var(--button-color);
 }
 
 .cta-button a:last-child:hover {
   color: var(--white-color);
-  background-color: var(--button-color);
+  background: var(--button-color);
   border: 1px solid var(--button-color);
 }
 
@@ -268,7 +260,7 @@ a {
   padding: 1.5rem 1.5rem 0 1.5rem;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  background-color: var(--white-color);
+  background: var(--white-color);
 }
 
 .add-container .add-modal .add-item {
@@ -320,7 +312,7 @@ a {
   align-items: center;
   padding: 1rem 1.5rem;
   transform: translateX(-100%);
-  background-color: var(--white-color);
+  background: var(--white-color);
   transition: 0.5s;
   z-index: 2;
 }
@@ -366,7 +358,7 @@ a {
 }
 
 .menu-item.active {
-  background-color: var(--button-color);
+  background: var(--button-color);
 }
 
 .menu-item.active .menu-link a {
@@ -397,7 +389,7 @@ a {
   width: 100%;
   height: 0.5rem;
   border-radius: 20px;
-  background-color: rgba(233, 228, 255, 1);
+  background: rgba(233, 228, 255, 1);
   margin-top: 1rem;
   position: relative;
 }
@@ -407,7 +399,7 @@ a {
   width: 25%;
   height: 0.5rem;
   border-radius: 20px;
-  background-color: var(--button-color);
+  background: var(--button-color);
 }
 
 /* Upgrade button */
@@ -422,7 +414,7 @@ a {
 
 .upgrade a:hover {
   color: var(--white-color);
-  background-color: var(--text-color);
+  background: var(--text-color);
 }
 
 /* ----- Middle Column ----- */
@@ -536,7 +528,7 @@ a {
 }
 
 .recent-item:first-child {
-  background-color: rgba(0, 98, 255, 0.05);
+  background: rgba(0, 98, 255, 0.05);
 }
 
 .recent-item-detail {
@@ -618,20 +610,21 @@ img.item-more {
     color: var(--text-color);
     font-size: 0.875rem;
     font-weight: 500;
-    line-height: 18.2px;
-    padding: 0 12px;
+    line-height: 1.138rem;
+    padding: 0 0.75rem;
     border-radius: 8px;
-    background-color: rgba(0, 98, 255, 0.15);
+    background: rgba(0, 98, 255, 0.15);
   }
 
   a.recent-btn img {
     width: 24px;
-    margin-left: 10px;
+    margin-left: 0.625rem;
   }
 }
 
 @media (min-width: 768px) {
   /* -------- LANDING PAGE -------- */
+
   /* Nav */
   .nav {
     padding: 1.5rem 1.5rem 0 1.5rem;
@@ -692,7 +685,6 @@ img.item-more {
     padding-right: 2rem;
   }
 
-  /* User */
   .user-account {
     display: flex;
     align-items: center;
@@ -718,7 +710,6 @@ img.item-more {
     color: var(--text-color);
   }
 
-  /* Add section */
   .add-section {
     margin-top: 1.5rem;
   }
@@ -783,7 +774,7 @@ img.item-more {
   .upgrade-account p:last-child {
     font-size: 0.813rem;
     font-weight: 500;
-    line-height: 18.33px;
+    line-height: 1.146rem;
     color: rgba(37, 84, 111, 0.5);
   }
 }
@@ -850,6 +841,10 @@ img.item-more {
     display: inline-block;
   }
 
+  .cta-button a {
+    margin-right: 1rem;
+  }
+
   .header-img {
     position: relative;
   }
@@ -877,7 +872,6 @@ img.item-more {
     padding-right: 2rem;
   }
 
-  /* Add section */
   .add-section .add-modal {
     position: relative;
     margin: 0 1rem;
@@ -937,7 +931,7 @@ img.item-more {
     width: 22px;
   }
 
-  /* Search box */
+  /* Search */
   .search-box .menu-toggle {
     display: none;
   }
@@ -999,12 +993,12 @@ img.item-more {
     margin-top: 2rem;
   }
 
-  .add-button a {
-    font-size: 1rem;
-  }
-
   .add-button {
     justify-content: space-around;
+  }
+
+  .add-button a {
+    font-size: 1rem;
   }
 
   .add-section .add-modal .add-item a {

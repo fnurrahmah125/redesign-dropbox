@@ -1,4 +1,4 @@
-// ------------ Menu Toggle ------------ //
+// ------------ Dashboard Page - Menu Toggle ------------ //
 const menuToggleDb = document.querySelector(".search-box  .menu-toggle");
 const colLeft = document.querySelector(".col-left");
 const bgLeft = document.querySelector(".bg-left");
@@ -13,7 +13,7 @@ bgLeft.addEventListener("click", function () {
   bgLeft.classList.remove("bg-show");
 });
 
-// ------------ Add Button ------------ //
+// ------------ Dashboard Page - Add Button ------------ //
 const addIcon = document.querySelector(".add-icon");
 const bgDown = document.querySelector(".bg-down");
 const addContainer = document.querySelector(".add-container");
