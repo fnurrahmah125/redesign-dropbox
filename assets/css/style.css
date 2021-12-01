@@ -36,9 +36,10 @@ a {
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
+  cursor: pointer;
 }
 
-.menu-toggle input {
+/* .menu-toggle input {
   position: absolute;
   width: 40px;
   height: 28px;
@@ -46,7 +47,7 @@ a {
   top: -6px;
   opacity: 0;
   cursor: pointer;
-}
+} */
 
 .menu-toggle span {
   display: block;
@@ -120,29 +121,29 @@ a {
 }
 
 /* Menu toggle */
-.nav .menu-toggle span:nth-child(2) {
+.nav .menu-toggle span:nth-child(1) {
   transform-origin: 0 0;
 }
 
-.nav .menu-toggle span:nth-child(4) {
+.nav .menu-toggle span:nth-child(3) {
   transform-origin: 0 100%;
 }
 
-.span-child2 {
+.span-child1 {
   transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.span-child4 {
+.span-child3 {
   transform: rotate(-45deg) translate(-1px, 0);
 }
 
-.span-child3 {
+.span-child2 {
   transform: translateX(500%);
 }
 
 /* Header */
 .header {
-  height: calc(100vh - 60px);
+  height: auto;
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -157,6 +158,7 @@ a {
   max-width: 560px;
   margin: auto;
   padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .text-header h1 {
@@ -822,7 +824,6 @@ img.item-more {
   .text-header {
     max-width: 660px;
     margin: auto;
-    padding-top: 0;
     text-align: left;
   }
 
