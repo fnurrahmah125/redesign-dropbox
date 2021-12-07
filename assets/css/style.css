@@ -263,6 +263,10 @@ a {
   margin-bottom: 1rem;
 }
 
+.add-container .add-modal .add-item img {
+  width: 40px;
+}
+
 .add-container .add-modal .add-item a {
   font-size: 0.875rem;
   color: var(--text-color);
@@ -692,6 +696,10 @@ img.item-more {
     border-radius: 16px;
   }
 
+  .user-account img {
+    width: 25px;
+  }
+
   .user-info {
     display: flex;
     align-items: center;
@@ -737,6 +745,10 @@ img.item-more {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+  }
+
+  .add-section .add-modal .add-item img {
+    width: 40px;
   }
 
   .add-section .add-modal .add-item a {
